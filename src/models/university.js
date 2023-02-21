@@ -14,14 +14,14 @@ const UniversityList = () => {
   return (
     <div>
       <h1>universities list</h1>
-      <ul>
+      <ol>
         {universities.map(university => (
           <li key={university.name}>
             {university.name} - {university.country}
           </li>
         ))}
         {/* mapping over the universities state array and rendering an li element for each university in the array */}
-      </ul>
+      </ol>
     </div>
   );
 };
